@@ -1,5 +1,3 @@
-import { Link } from "@tanstack/react-router";
-
 const nav = [
   { href: "/plan", label: "Plan" },
   { href: "/destinations", label: "Destinations" },
@@ -11,9 +9,9 @@ export function SiteHeader() {
   return (
     <header className="border-b-4 border-ink bg-paper">
       <div className="flex items-center justify-between px-4 md:px-8 lg:px-12 py-5">
-        <Link to="/" className="font-display text-2xl tracking-tight">
+        <a href="/" className="font-display text-2xl tracking-tight">
           Planviry<span className="text-accent">·</span>
-        </Link>
+        </a>
         <nav className="hidden md:flex items-center gap-8">
           {nav.map((n) => (
             <a
